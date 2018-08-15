@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<!-- 在类中起别名在子类中应用 -->
+	<typeAliases>
+     <typeAlias alias="user" type="com.offcn.pojo.User"  />	
+	</typeAliases>
+
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/mm002?useUnicode=true&amp;characterEncoding=utf8" />
+				<property name="username" value="root" />
+				<property name="password" value="123456" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+	<mapper class="com.offcn.dao.UserMapper"/>
+	</mappers>
+	
+
+	
+	
+</configuration>
+
+
+
+
+
+
+
